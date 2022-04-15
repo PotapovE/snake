@@ -1,13 +1,25 @@
-﻿int x1 = 1;
-int y1 = 3;
-char sym1 = '*';
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-void Draw(int x, int y, char sym)
+namespace snake
 {
-    Console.SetCursorPosition(x, y);
-    Console.Write(sym);
+    class Program
+    {
+        static void Main( string[] args )
+        {
+            Point p1 = new()
+            {
+                x = 1,
+                y = 3,
+                sym = '#'
+            };
+
+            p1.Draw();
+
+            Console.ReadLine();
+        }
+    }
 }
-
-Draw(x1, y1, sym1);
-
-Console.ReadLine();
